@@ -130,54 +130,231 @@
   text-align: left;
 }
 
+.reveal .cis-introduccion {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.reveal .cis-introduccion h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.reveal .cis-introduccion p {
+  margin: 0;
+}
+
+.cis-presentacion {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  align-items: center;
+  gap: 40px;
+}
+
+.reveal .cis-definicion > p:first-child {
+  color: #cb2c30;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.reveal .cis-logo {
+  width: 250px;
+  height: auto;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+}
+
+.cis-historia {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 48px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.cis-fecha strong {
+  color: #cb2c30;
+}
+
+.cis-columnas {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 48px;
+  margin: 24px 0 20px;
+}
+
+.reveal .cis-idea-titulo {
+  color: #cb2c30;
+  font-size: 30px;
+  margin: 0 0 16px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+.reveal .cis-idea ul {
+  margin: 10px 0 0 1em;
+}
+
+.reveal .cis-idea li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+.reveal .cis-idea li::marker {
+  color: #cb2c30;
+}
+
+.cis-practica {
+  border-top: 2px solid #cb2c30;
+  padding-top: 14px;
+}
+
+.reveal .cis-practica p + p {
+  margin-top: 10px;
+  color: #cb2c30;
+}
+
+.reveal .cis-fuente {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 .reveal .pregunta-investigacion {
   font-size: 28px;
   line-height: 1.3;
 }
 
-.reveal .pregunta-investigacion h2 {
-  margin-bottom: 24px;
+.reveal .cis-acceso {
+  font-size: 30px;
+  line-height: 1.35;
 }
 
-.reveal .pregunta-investigacion p {
-  margin: 0 0 16px;
+.reveal .cis-acceso h2 {
+  margin-bottom: 40px;
 }
 
-.pregunta-columnas {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 64px;
-  margin-top: 48px;
-}
-
-.reveal .pregunta-pasos ol {
-  margin: 0 0 0 1.2em;
-}
-
-.reveal .pregunta-pasos li {
-  padding-left: 6px;
-  margin-bottom: 20px;
-}
-
-.reveal .pregunta-pasos li::marker {
-  color: #cb2c30;
-  font-weight: 700;
-}
-
-.reveal .pregunta-ejemplo-titulo {
-  font-size: 28px;
-  margin: 0 0 16px;
-}
-
-.reveal .pregunta-ejemplo-titulo p {
+.reveal .cis-acceso p {
   margin: 0;
 }
 
-.reveal .pregunta-ejemplo > p:first-of-type {
+.reveal .cis-ruta {
+  display: grid;
+  grid-template-columns: 0.85fr 0.85fr 1.3fr;
+  gap: 40px;
+  list-style: none;
+  margin: 96px 0 0;
+  padding: 0;
+}
+
+.cis-ruta li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.cis-ruta-numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #cb2c30;
+  color: white;
+  font-size: 34px;
+}
+
+.reveal .cis-ruta small {
+  display: block;
+  margin-top: 18px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.reveal .pregunta-investigacion h2 {
+  margin-bottom: 8px;
+}
+
+.reveal .pregunta-investigacion > p {
+  font-size: 28px;
+  margin: 0;
+}
+
+.reveal .pregunta-proceso {
+  margin: 10px 0 14px;
   color: #cb2c30;
   font-size: 32px;
-  line-height: 1.3;
-  margin-bottom: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reveal .pregunta-investigacion .pregunta-proceso p {
+  margin: 0;
+}
+
+.pregunta-resumen {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 56px;
+}
+
+.reveal .pregunta-reglas ul {
+  margin: 0 0 0 1em;
+}
+
+.reveal .pregunta-reglas li {
+  margin-bottom: 8px;
+  padding-left: 6px;
+}
+
+.reveal .pregunta-reglas li::marker {
+  color: #cb2c30;
+}
+
+.reveal .pregunta-version-titulo {
+  color: #cb2c30;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.reveal .pregunta-investigacion .pregunta-version-titulo p {
+  margin: 0;
+}
+
+.reveal .pregunta-actividad > p {
+  margin: 0;
+}
+
+.reveal .pregunta-ejemplo-actividad {
+  border-top: 2px solid #cb2c30;
+  padding-top: 12px;
+  margin-top: 12px;
+  font-size: 26px;
+}
+
+.reveal .pregunta-ejemplo-actividad p {
+  margin: 0 0 4px;
+}
+
+.reveal .pregunta-mejor {
+  color: #cb2c30;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.reveal .pregunta-causalidad {
+  margin-top: 4px;
+  font-size: 20px;
+  color: #666;
+}
+
+.reveal .pregunta-causalidad p {
+  margin: 0;
 }
 
 .reveal .objetivo-variables {
@@ -186,7 +363,7 @@
 }
 
 .reveal .objetivo-variables h2 {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .reveal .objetivo-variables p {
@@ -194,32 +371,58 @@
 }
 
 .objetivo-texto {
-  font-size: 32px;
-  margin-bottom: 36px;
-}
-
-.variables-preguntas {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 48px;
-  margin-bottom: 36px;
-}
-
-.reveal .variable-definicion p:first-child {
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  align-items: baseline;
   font-size: 30px;
-  color: #cb2c30;
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 
-.reveal .variable-definicion p:nth-child(2) {
-  margin-bottom: 8px;
+.objetivo-etiqueta {
+  color: #cb2c30;
 }
 
 .variables-ejemplo-pregunta {
   font-size: 32px;
   line-height: 1.35;
   text-align: center;
-  margin-bottom: 28px;
+  margin: 0 auto 28px;
+  max-width: 1180px;
+}
+
+.variables-pregunta-etiqueta {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.variables-preguntas {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 64px;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 20px;
+}
+
+.reveal .variable-definicion > p:first-child {
+  font-size: 30px;
+  color: #cb2c30;
+  margin-bottom: 12px;
+}
+
+.reveal .variable-definicion > p:nth-child(2) {
+  margin-bottom: 6px;
+}
+
+.reveal .variable-definicion > p:nth-child(3) {
+  font-size: 26px;
+}
+
+.variable-respuesta {
+  font-size: 30px;
+  color: #cb2c30;
+  margin-top: 16px;
 }
 
 .reveal .variables-ejemplo-pregunta .fragment.highlight-red.visible {
@@ -248,36 +451,10 @@
   }
 }
 
-.variables-ejemplo {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1.5fr);
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 32px;
-}
-
-.variable-ejemplo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  text-align: center;
-}
-
-.variable-nombre {
-  font-size: 32px;
-  font-weight: 700;
-  color: #cb2c30;
-}
-
-.variable-flecha {
-  font-size: 52px;
-  color: #cb2c30;
-  text-align: center;
-}
-
 .variables-recordatorio {
   font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .reveal .siguientes-pasos {
@@ -286,18 +463,26 @@
 }
 
 .reveal .siguientes-pasos h2 {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+}
+
+.reveal .analisis-punto-partida {
+  margin-bottom: 20px;
+}
+
+.reveal .analisis-punto-partida p {
+  margin: 0;
 }
 
 .pasos-analisis {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   column-gap: 56px;
-  row-gap: 32px;
+  row-gap: 24px;
 }
 
 .reveal .paso-actividad p {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
 }
 
 .reveal .paso-cabecera p {
@@ -305,7 +490,7 @@
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-size: 28px;
 }
 
@@ -319,6 +504,69 @@
 
 .reveal .paso-actividad li {
   margin-bottom: 5px;
+}
+
+.reveal .paso-en-espera {
+  visibility: hidden;
+}
+
+.reveal .p18-univariable h2 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.p18-contexto {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.reveal .p18-contexto p {
+  margin: 0;
+}
+
+.p18-escenario {
+  position: relative;
+  height: 570px;
+}
+
+.reveal .p18-grafico img {
+  display: block;
+  width: 1280px;
+  height: 520px;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: none;
+  margin: 0;
+}
+
+.p18-fuente {
+  margin-top: 8px;
+  font-size: 22px;
+  text-align: center;
+  color: #666;
+}
+
+.reveal .p18-fuente p {
+  margin: 0;
+}
+
+.p18-comentario {
+  position: absolute;
+  inset: 45px 70px auto;
+  font-size: 36px;
+  line-height: 1.45;
+}
+
+.p18-comentario-titulo {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  color: #cb2c30;
+  margin-bottom: 24px;
+  font-size: 38px;
+}
+
+.reveal .p18-comentario p {
+  margin: 0;
 }
 
 .reveal .producto-final {
@@ -361,4 +609,110 @@
   max-height: none;
   max-width: none;
   margin: 0;
+}
+
+.reveal .p18-bivariable h2 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.reveal .tabla-religion {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 25px;
+  font-variant-numeric: tabular-nums;
+  margin: 18px 0 0;
+}
+
+.reveal .tabla-religion th,
+.reveal .tabla-religion td {
+  text-align: center;
+  padding: 7px 4px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  vertical-align: middle;
+}
+
+.reveal .tabla-religion th:first-child {
+  width: 190px;
+  text-align: left;
+}
+
+.reveal .tabla-religion thead th {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 600;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #cb2c30;
+}
+
+.reveal .tabla-religion tbody th {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.reveal .tabla-religion td:last-child,
+.reveal .tabla-religion thead th:last-child {
+  background: #f5f5f5;
+}
+
+.reveal .tabla-religion .tabla-no-respuesta th,
+.reveal .tabla-religion .tabla-no-respuesta td {
+  font-size: 20px;
+  color: #666;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.reveal .tabla-religion .tabla-n th,
+.reveal .tabla-religion .tabla-n td {
+  font-size: 20px;
+  border-top: 2px solid #b7b7b7;
+  border-bottom: none;
+  padding-top: 10px;
+}
+
+.reveal .tabla-religion td:has(.highlight-red.visible) {
+  background: #fae3e4;
+  box-shadow: inset 0 0 0 2px #cb2c30;
+}
+
+.reveal .tabla-religion .highlight-red.visible {
+  font-weight: 800;
+  color: #a71b20;
+}
+
+.reveal .tabla-religion td:has(.current-fragment) {
+  animation: bivar-pulso 650ms ease-out;
+}
+
+@keyframes bivar-pulso {
+  0% { background: #cb2c30; color: white; }
+  100% { background: #fae3e4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal .tabla-religion td:has(.current-fragment) { animation: none; }
+}
+
+.reveal .p18-bivariable .p18-comentario {
+  inset: 30px 65px auto;
+  font-size: 34px;
+  line-height: 1.45;
+}
+
+.reveal .tabla-religion {
+  line-height: 1.1;
+}
+
+.reveal .tabla-religion th,
+.reveal .tabla-religion td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.reveal .tabla-religion th:first-child {
+  width: 190px;
+  white-space: nowrap;
 }
